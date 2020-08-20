@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
 
+import { ComponentsModule } from '../components/components.module';
+
 @NgModule({
   declarations: [
     PagesComponent,
@@ -20,7 +22,8 @@ import { ProgressComponent } from './progress/progress.component';
   imports: [
     CommonModule,
     RouterModule,    // Sólo importo ésto porque nada más uso el router-oulet
-    SharedModule
+    SharedModule,
+    ComponentsModule   // Para importar el incrementador
   ],
   exports: [
     PagesComponent,
