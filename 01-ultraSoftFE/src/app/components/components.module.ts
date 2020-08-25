@@ -5,6 +5,7 @@ import { IncrementadorComponent } from './incrementador/incrementador.component'
 
 import { FormsModule } from '@angular/forms';
 
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
     IncrementadorComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   exports: [
     IncrementadorComponent,

@@ -11,6 +11,7 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { ProgressComponent } from './progress/progress.component';
 
 import { ComponentsModule } from '../components/components.module';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ComponentsModule } from '../components/components.module';
     CommonModule,
     RouterModule,    // Sólo importo ésto porque nada más uso el router-oulet
     SharedModule,
-    ComponentsModule   // Para importar el incrementador
+    ComponentsModule,   // Para importar el incrementador y la dona (Grafica)
+    ChartsModule
   ],
   exports: [
     PagesComponent,
